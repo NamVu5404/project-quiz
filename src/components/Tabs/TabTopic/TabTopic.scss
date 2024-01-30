@@ -1,0 +1,23 @@
+table, th, td {
+  border: 2px solid #ddd;
+  border-collapse: collapse;
+  padding: 10px ;
+}
+
+.topic {
+  width: 80%;
+  text-align: center;
+
+  &__id {
+    width: 20%;
+  }
+
+  &__name,
+  &__btn {
+    width: 40%;
+  }
+
+  .btn {
+    width: auto;
+  }
+}

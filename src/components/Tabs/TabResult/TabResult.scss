@@ -1,0 +1,30 @@
+.result {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+
+  &__check {
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 5px;
+    margin-left: 10px;
+
+    &-correct {
+      background-color: green;
+    }
+
+    &-wrong {
+      background-color: red;
+    }
+  }
+
+  &__answer {
+    &-correct {
+      color: green;
+    }
+
+    &-wrong {
+      color: red;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+$color-hover: #FF6410;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 150px;
+  background-image: linear-gradient(to right, rgb(250, 173, 29), rgb(234, 152, 0));
+  box-shadow: 0 0 1px #ddd;
+  position: sticky;
+  top: 0;
+
+  &__logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  &__menu {
+    display: flex;
+
+    &-active {
+      background-color: $color-hover;
+    }
+  }
+
+  &__link {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+  }
+}
+
+.main {
+  padding: 60px 150px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-image: linear-gradient(to right, rgb(250, 173, 29), rgb(234, 152, 0));
+  text-align: center;
+  padding: 10px 0;
+}

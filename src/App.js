@@ -1,24 +1,21 @@
-import logo from './logo.svg';
+import { useDispatch } from 'react-redux';
 import './App.css';
+import AllRoutes from './components/AllRoutes';
+import { getCookie } from './utils/request';
+import { isLogin } from './actions';
 
 function App() {
+  const dispatch = useDispatch();
+  const token = getCookie("token");
+
+  if (token) {
+    dispatch(isLogin(true));
+  } else {
+    dispatch(isLogin(false));
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AllRoutes />
   );
 }
 
