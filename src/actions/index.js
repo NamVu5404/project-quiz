@@ -5,13 +5,6 @@ export const isLogin = (status) => {
   }
 }
 
-export const setTopic = (id) => {
-  return {
-    type: "SET_TOPIC",
-    id: id,
-  }
-}
-
 export const createAnswser = (questionId, answer) => {
   return {
     type: "CREATE_ANSWER",
